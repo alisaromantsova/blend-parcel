@@ -1,24 +1,69 @@
 .hero {
-  padding-top: 270px;
-  padding-bottom: 293px;
-  background-image: url('../images/background-img.jpg');
+  max-width: 320px;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 144px;
+  padding-bottom: 95px;
+  background-image: url('../images/bg-mobile.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  /* background-color: #000; */
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bg-mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 708px) and (max-width: 1359px) {
+    padding-top: 407px;
+    padding-bottom: 421px;
+    max-width: 708px;
+    background-image: url(../images/bg-tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-tablet@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1360px) {
+    padding-top: 279px;
+    padding-bottom: 284px;
+    max-width: 1360px;
+    background-image: url(../images/bg-desctop.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-desctop@2x.jpg);
+    }
+  }
+
+  & .container {
+    padding: 0 0;
+  }
 
   &__title {
-    margin-bottom: 25px;
+    margin-bottom: 16px;
+    margin-left: 39px;
+    margin-right: 40px;
     font-weight: 300;
-    font-size: 55px;
-    line-height: 1.2;
+    font-size: 52px;
+    line-height: 1.27;
     text-align: center;
     color: var(--hero-text-color);
+    @media screen and (min-width: 708px) {
+      font-size: 55px;
+      line-height: 1.2;
+    }
   }
 
   &__text {
     padding-bottom: 29px;
     font-size: 22px;
     line-height: 1.68;
+    margin: 0 27px;
     text-align: center;
     color: var(--hero-text-color);
     border: none;
@@ -35,14 +80,18 @@
     padding: 10px 31px 9px 27px;
     color: var(--main);
     background-color: var(--accent);
-    font-size: 18px;
-    line-height: 1.55;
+    font-size: 16px;
+    line-height: 1.625;
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 250ms linear, color 250ms linear;
     outline: none;
     border: none;
+    @media screen and (min-width: 708px) {
+      font-size: 18px;
+      line-height: 1.55;
+    }
   }
 
   &__button:hover,
