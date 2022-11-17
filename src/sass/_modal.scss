@@ -26,11 +26,13 @@ body.modal-open {
 
 .modal {
   position: absolute;
-  min-width: 528px;
+  min-width: 320px;
   min-height: 350px;
+  width: 100%;
+  max-width: 528px;
   left: 50%;
   top: 50%;
-  padding: 40px;
+  padding: 30px;
   background: var(--main);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -39,6 +41,17 @@ body.modal-open {
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
+  @media screen and (min-width: 480px) and (max-width:707px) {
+      min-width: 480px;
+      min-height: 250px;
+      padding: 40px;
+    }
+
+  @media screen and (min-width: 708px) {
+    min-width: 528px;
+    min-height: 350px;
+    padding: 40px;
+  }
 
   &__close-button {
     display: flex;
@@ -47,12 +60,16 @@ body.modal-open {
     position: absolute;
     top: 8px;
     right: 8px;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: var(--main);
     cursor: pointer;
+    @media screen and (min-width: 708px) {
+      height: 30px;
+      width: 30px;
+    }
   }
 
   &__close-icon {
@@ -72,11 +89,15 @@ body.modal-open {
   &__title {
     margin-bottom: 20px;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    font-size: 16px;
+    line-height: 1.25;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--dark);
+    @media screen and (min-width: 708px) {
+      font-size: 20px;
+      line-height: 1.15;
+    }
   }
 
   &__input-form {
@@ -87,11 +108,15 @@ body.modal-open {
   &__label {
     display: block;
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.14;
     letter-spacing: 0.01em;
     color: var(--dark);
     cursor: pointer;
+    @media screen and (min-width: 708px) {
+      font-size: 12px;
+      line-height: 1.14;
+    }
   }
 
   &__input {
@@ -131,7 +156,13 @@ body.modal-open {
   &__checkbox-label {
     position: relative;
     padding-left: 23px;
+    font-size: 12px;
+    line-height: 1.14;
     cursor: pointer;
+    @media screen and (min-width: 708px) {
+      font-size: 14px;
+      line-height: 1.15;
+    }
   }
 
   &__checkbox-container {
@@ -182,8 +213,8 @@ body.modal-open {
     display: block;
     background-color: var(--accent);
     color: var(--main);
-    font-size: 18px;
-    line-height: 1.55;
+    font-size: 14px;
+    line-height: 1.25;
     cursor: pointer;
     border: 1px solid #ffffff;
     box-shadow: none;
@@ -192,7 +223,12 @@ body.modal-open {
     margin-left: auto;
     margin-right: auto;
     padding: 11px 42px;
-    transition: background-color 250ms linear, color 250ms linear, border 250ms linear, box-shadow 250ms linear;
+    transition: background-color 250ms linear, color 250ms linear,
+      border 250ms linear, box-shadow 250ms linear;
+    @media screen and (min-width: 708px) {
+      font-size: 18px;
+      line-height: 1.55;
+    }
   }
 
   &__send-button:hover,
