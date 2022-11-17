@@ -102,6 +102,11 @@ img {
   margin-right: auto;
   width: 100%;
 }
+@media screen and (max-width: 480px) {
+  .nav-block {
+    width: 100vw;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav-block {
     flex-direction: row;
@@ -422,7 +427,7 @@ img {
 }
 
 .blog__img {
-  width: 100%;
+  width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -771,7 +776,7 @@ img {
   color: var(--accent);
 }
 .solution__img {
-  width: 100%;
+  width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
 }

@@ -83,7 +83,7 @@
   background-color: var(--main);
 }
 .blog__img {
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
   @media screen and (max-width: 767px) {
     max-width: 480px;
