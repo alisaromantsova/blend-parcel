@@ -1,4 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
 :root {
   --accent: #28a745;
   --button-accent: #2bb14a;
@@ -55,17 +56,20 @@ img {
   padding: 0 28px;
   position: relative;
 }
+
 @media screen and (max-width: 707px) {
   .container {
     width: 100vw;
     max-width: 480px;
   }
 }
+
 @media screen and (min-width: 708px) and (max-width: 1359px) {
   .container {
     width: 708px;
   }
 }
+
 @media screen and (min-width: 1360px) {
   .container {
     width: 1360px;
@@ -81,7 +85,7 @@ img {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -177,35 +181,42 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/bg-mobile@2x.jpg);
   }
 }
+
 @media screen and (min-width: 708px) and (max-width: 1359px) {
   .hero {
     background-image: url(../images/bg-tablet.jpg);
   }
 }
+
 @media screen and (min-width: 708px) and (max-width: 1359px) and (min-device-pixel-ratio: 2), screen and (min-width: 708px) and (max-width: 1359px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 708px) and (max-width: 1359px) and (min-resolution: 192dpi), screen and (min-width: 708px) and (max-width: 1359px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/bg-tablet@2x.jpg);
   }
 }
+
 @media screen and (min-width: 1360px) {
   .hero {
     padding: 200px 0;
     background-image: url(../images/bg-desctop.jpg);
   }
 }
+
 @media screen and (min-width: 1360px) and (min-device-pixel-ratio: 2), screen and (min-width: 1360px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1360px) and (min-resolution: 192dpi), screen and (min-width: 1360px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/bg-desctop@2x.jpg);
   }
 }
+
 .hero .container {
   padding: 0 0;
 }
+
 .hero__title {
   margin-bottom: 16px;
   margin-left: 39px;
@@ -216,6 +227,7 @@ img {
   text-align: center;
   color: var(--hero-text-color);
 }
+
 .hero__text {
   padding-bottom: 29px;
   font-size: 22px;
@@ -226,6 +238,7 @@ img {
   border: none;
   outline: none;
 }
+
 .hero__button {
   font-family: inherit;
   display: flex;
@@ -245,10 +258,12 @@ img {
   outline: none;
   border: none;
 }
+
 .hero__button:hover, .hero__button:focus {
   background-color: var(--main);
   color: var(--accent);
 }
+
 .hero__icon {
   fill: currentColor;
 }
@@ -414,17 +429,20 @@ img {
   padding-top: 40px;
   padding-bottom: 19px;
 }
+
 .services__list {
   display: flex;
   gap: 71px;
   justify-content: center;
 }
+
 .services__item {
   width: 362px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .services__icon {
   height: 67px;
   width: 67px;
@@ -435,9 +453,11 @@ img {
   align-items: center;
   justify-content: center;
 }
+
 .services__icon {
   fill: currentColor;
 }
+
 .services__title {
   color: var(--dark);
   font-size: 20px;
@@ -447,6 +467,7 @@ img {
   margin-top: 16px;
   margin-bottom: 16px;
 }
+
 .services__text {
   color: var(--dark);
   font-size: 18px;
@@ -458,9 +479,11 @@ img {
   background-color: var(--accent);
   color: var(--main);
 }
+
 .solution .container {
   display: flex;
 }
+
 .solution__pre-title {
   font-size: 20px;
   line-height: 1.65;
@@ -468,6 +491,7 @@ img {
   margin-left: 30px;
   margin-right: 44px;
 }
+
 .solution__title {
   font-weight: 300;
   font-size: 38px;
@@ -475,6 +499,7 @@ img {
   margin-top: 5px;
   margin-left: 30px;
 }
+
 .solution__text {
   font-size: 18px;
   line-height: 1.55;
@@ -482,6 +507,7 @@ img {
   margin-top: 26px;
   margin-left: 30px;
 }
+
 .solution__button {
   background-color: var(--accent);
   color: var(--main);
@@ -495,10 +521,12 @@ img {
   padding: 11px 42px;
   transition: background-color 250ms linear, color 250ms linear, border 250ms linear;
 }
+
 .solution__button:hover, .solution__button:hover {
   background-color: var(--main);
   color: var(--accent);
 }
+
 .solution__img {
   margin-left: -30px;
 }
@@ -685,6 +713,7 @@ body.modal-open {
   transition: transform 250ms linear;
   /* Form */
 }
+
 .modal__close-button {
   display: flex;
   justify-content: center;
@@ -699,14 +728,17 @@ body.modal-open {
   background: var(--main);
   cursor: pointer;
 }
+
 .modal__close-icon {
   fill: #000;
   transition: fill 500ms linear, transform 500ms linear;
 }
+
 .modal__close-button:hover .modal__close-icon, .modal__close-button:focus .modal__close-icon {
   fill: var(--accent);
   transform: rotate(180deg) scale(1.2);
 }
+
 .modal__title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -716,10 +748,12 @@ body.modal-open {
   letter-spacing: 0.03em;
   color: var(--dark);
 }
+
 .modal__input-form {
   position: relative;
   margin-top: 4px;
 }
+
 .modal__label {
   display: block;
   margin-bottom: 10px;
@@ -729,6 +763,7 @@ body.modal-open {
   color: var(--dark);
   cursor: pointer;
 }
+
 .modal__input {
   height: 40px;
   width: 100%;
@@ -743,10 +778,12 @@ body.modal-open {
   outline: none;
   transition: border 250ms linear;
 }
+
 .modal__label:hover .modal__input, .modal__label:focus-within .modal__input, .modal__label:hover .modal__form-icon, .modal__label:focus-within .modal__form-icon {
   border-color: var(--accent);
   fill: var(--accent);
 }
+
 .modal__form-icon {
   position: absolute;
   top: 50%;
@@ -755,21 +792,25 @@ body.modal-open {
   fill: var(--dark);
   transition: fill 250ms linear;
 }
+
 .modal__checkbox-label {
   position: relative;
   padding-left: 23px;
   cursor: pointer;
 }
+
 .modal__checkbox-container {
   position: relative;
   text-align: center;
   margin-top: 20px;
 }
+
 .modal__checkbox {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
+
 .modal__checkbox-label::before {
   content: "";
   position: absolute;
@@ -780,6 +821,7 @@ body.modal-open {
   border: 2px solid var(--dark);
   border-radius: 2px;
 }
+
 .modal__checkbox-vector {
   position: absolute;
   top: 20%;
@@ -789,15 +831,19 @@ body.modal-open {
   fill: var(--main);
   opacity: 0;
 }
-.modal__checkbox:checked + .modal__checkbox-label .modal__checkbox-vector {
+
+.modal__checkbox:checked+.modal__checkbox-label .modal__checkbox-vector {
   opacity: 1;
 }
+
 .modal__checkbox-link {
   color: var(--accent);
 }
+
 .modal__checkbox-link:hover, .modal__checkbox-link:focus {
   text-decoration: underline;
 }
+
 .modal__send-button {
   display: block;
   background-color: var(--accent);
@@ -814,9 +860,12 @@ body.modal-open {
   padding: 11px 42px;
   transition: background-color 250ms linear, color 250ms linear, border 250ms linear, box-shadow 250ms linear;
 }
+
 .modal__send-button:hover, .modal__send-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--main);
   color: var(--accent);
   border: 1px solid var(--accent);
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
