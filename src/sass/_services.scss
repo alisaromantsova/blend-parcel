@@ -1,50 +1,87 @@
 .services {
   background: var(--pale);
-  padding-top: 40px;
-  padding-bottom: 19px;
+  padding-top: 30px;
+  padding-bottom: 31px;
+  margin: 0 auto;
+  @media screen and (min-width: 708px) and (max-width: 1359px) {
+    padding-top: 40px;
+    padding-bottom: 47px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding-bottom: 19px;
+  }
 
   &__list {
     display: flex;
-    gap: 71px;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
     justify-content: center;
+    @media screen and (min-width: 708px) and (max-width: 1359px) {
+      flex-direction: row;
+      gap: 49px;
+    }
+    @media screen and (min-width: 1360px) {
+      flex-direction: row;
+      gap: 71px;
+    }
   }
 
   &__item {
-    width: 362px;
+    max-width: 480px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 708px) {
+      width: 185px;
+    }
+
+    @media screen and (min-width: 1360px) {
+      width: 358px
+    }
   }
 
   &__icon {
-    height: 67px;
-    width: 67px;
+    height: 64px;
+    width: 64px;
     border-radius: 50%;
     background-color: var(--accent);
     color: var(--main);
+    fill: var(--main);
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  &__icon {
-    fill: currentColor;
+    @media screen and (min-width: 708px) {
+      height: 67px;
+      width: 67px;
+    }
   }
 
   &__title {
     color: var(--dark);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.65;
+    font-size: 18px;
+    line-height: 1.66;
     text-align: center;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 11px;
+    margin-bottom: 15px;
+    margin-top: 11px;
+    margin-bottom: 15px;
+    @media screen and (min-width: 708px) {
+      font-size: 20px;
+      line-height: 1.65;
+      width: 191px;
+    }
   }
 
   &__text {
     color: var(--dark);
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.625;
     text-align: center;
+    @media screen and (min-width: 708px) {
+      font-size: 18px;
+      line-height: 1.5;
+    }
   }
 }
