@@ -42,12 +42,14 @@
 
 .team__item {
     cursor: pointer;
+
+    &:hover .team__social,
+    &:hover .team__card::after {
+        opacity: 1;
+    }
 }
 
-.team__item:hover .team__social,
-.team__item:hover .team__card::after {
-    opacity: 1;
-}
+
 
 .team__card {
     position: relative;
