@@ -1,124 +1,148 @@
- <section class="team">
-      <div class="container">
-        <div class="team__container">
-          <p class="team__subtitle">Who we are</p>
-          <h2 class="team__title">Our professional team</h2>
-          <p class="team__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
-          </p>
-          <ul class="team__list">
-            <li class="team__item">
-              <div class="team__card">
-                <img class="team__img" src="./images/cardteam1.jpg" alt="man stands near the wall" width="480" />
-                <ul class="team__social">
-                  <li>
-                    <a href="">
-                      <svg class="team__icon" width="35" height="35">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <svg class="team__icon" width="35" height="35">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <svg class="team__icon" width="35" height="40">
-                        <use href="./images/icons.svg#icon-youtube"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <svg class="team__icon" width="31" height="35">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <h3 class="team__name">John Doe</h3>
-              <p class="team__description">President</p>
-            </li>
-            <li class="team__item">
-              <div class="team__card">
-                <img class="team__img" src="./images/cardteam2.jpg" alt="woman stands near the wall" width="480" />
-                <ul class="team__social">
-                  <li>
-                    <a href="">
-                      <svg class="team__icon" width="35" height="35">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <svg class="team__icon" width="35" height="35">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <svg class="team__icon" width="35" height="40">
-                        <use href="./images/icons.svg#icon-youtube"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <svg class="team__icon" width="31" height="35">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <h3 class="team__name">Jane Doe</h3>
-              <p class="team__description">Vice president</p>
-            </li>
-            <li class="team__item">
-              <div class="team__card">
-                <img class="team__img" src="./images/cardteam3.jpg" alt="man is drinking coffee" width="480" />
-                <ul class="team__social">
-                  <li>
-                    <a href="">
-                      <svg class="team__icon" width="35" height="35">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <svg class="team__icon" width="35" height="35">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <svg class="team__icon" width="35" height="40">
-                        <use href="./images/icons.svg#icon-youtube"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <svg class="team__icon" width="31" height="35">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <h3 class="team__name">Steve Smith</h3>
-              <p class="team__description">Marketing head</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<section class="team">
+  <div class="container">
+    <div class="team__container">
+      <p class="team__subtitle">Who we are</p>
+      <h2 class="team__title">Our professional team</h2>
+      <p class="team__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
+      </p>
+      <ul class="team__list">
+        <li class="team__item">
+          <div class="team__card">
+            <picture class="team__img">
+              <source srcset=" ./images/cardteam1-phone.jpg 1x, ./images/cardteam1-phone@2x.jpg 2x"
+                media="(max-width: 767px)">
+              <source srcset="./images/cardteam1-tablet.jpg 1x, ./images/cardteam1-tablet@2x.jpg 2x"
+                media="(min-width:768px, max-width: 1199px)">
+              <source srcset="./images/cardteam1.jpg 1x, ./images/cardteam1-desktop@2x.jpg 2x"
+                media="(min-width:1200px)">
+              <img src="./images/cardteam1.jpg" alt="man stands near the wall" />
+            </picture>
+            <ul class="team__social">
+              <li>
+                <a href="">
+                  <svg class="team__icon" width="35" height="35">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg class="team__icon" width="35" height="35">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg class="team__icon" width="35" height="40">
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg class="team__icon" width="31" height="35">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <h3 class="team__name">John Doe</h3>
+          <p class="team__description">President</p>
+        </li>
+        <li class="team__item">
+          <div class="team__card">
+            <picture class="team__img">
+              <source srcset=" ./images/cardteam2-phone.jpg 1x, ./images/cardteam2-phone@2x.jpg 2x"
+                media="(max-width: 767px)">
+              <source srcset="./images/cardteam2-tablet.jpg 1x, ./images/cardteam2-tablet@2x.jpg 2x"
+                media="(min-width:768px, max-width: 1199px)">
+              <source srcset="./images/cardteam2.jpg 1x, ./images/cardteam2-desktop@2x.jpg 2x"
+                media="(min-width:1200px)">
+              <img src=" ./images/cardteam2.jpg" alt="woman stands near the wall" />
+            </picture>
+            <ul class="team__social">
+              <li>
+                <a href="">
+                  <svg class="team__icon" width="35" height="35">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg class="team__icon" width="35" height="35">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg class="team__icon" width="35" height="40">
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg class="team__icon" width="31" height="35">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <h3 class="team__name">Jane Doe</h3>
+          <p class="team__description">Vice president</p>
+        </li>
+        <li class="team__item">
+          <div class="team__card">
+            <picture class="team__img">
+              <source srcset=" ./images/cardteam3-phone.jpg 1x. ./images/cardteam3-phone@2x.jpg 2x"
+                media="(max-width: 767px)">
+              <source srcset="./images/cardteam3-tablet.jpg 1x, ./images/cardteam3-tablet@2x.jpg 2x"
+                media="(min-width:768px, max-width: 1199px)">
+              <source srcset="./images/cardteam3.jpg 1x, ./images/cardteam3-desktop@2x.jpg 2x"
+                media="(min-width:1200px)">
+              <img src=" ./images/cardteam3.jpg" alt="man is drinking coffee" />
+            </picture>
+            <ul class="team__social">
+              <li>
+                <a href="">
+                  <svg class="team__icon" width="35" height="35">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg class="team__icon" width="35" height="35">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg class="team__icon" width="35" height="40">
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg class="team__icon" width="31" height="35">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <h3 class="team__name">Steve Smith</h3>
+          <p class="team__description">Marketing head</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
