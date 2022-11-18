@@ -9,22 +9,17 @@
 
     @media screen and (min-width: 768px) {
         padding: 48px 30px 59px 30px;
-        max-width: 768px;
+
     }
 
     @media screen and (min-width: 1360px) {
         padding: 49px 31px 57px 30px;
-        max-width: 1360px;
     }
 
 }
 
 .team__img {
     width: 100%;
-
-    @media screen and (min-width: 768px) {
-        width: 223px;
-    }
 }
 
 .team__subtitle {
@@ -120,9 +115,13 @@
 
 .team__card {
     width: 100%;
-    max-width: 280px;
+
     position: relative;
     margin-bottom: 15px;
+
+    @media screen and (max-width: 767px) {
+        max-width: 280px;
+    }
 
     @media screen and (min-width: 768px) {
         margin-bottom: 14px;
@@ -131,6 +130,7 @@
 
     @media screen and (min-width: 1360px) {
         margin-bottom: 11px;
+        width: 420px;
     }
 
     &::after {
