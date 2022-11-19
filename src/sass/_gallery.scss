@@ -1,4 +1,4 @@
-.gallery {
+.gallery-section {
   padding-top: 50px;
   padding-bottom: 47px;
   background: var(--light-bcg);
@@ -37,7 +37,7 @@
   }
 }
 
-.gallery__list {
+.gallery {
   display: flex;
   gap: 7px;
   flex-wrap: wrap;
