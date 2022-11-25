@@ -1,20 +1,7 @@
-.team__container {
-  padding: 50px 20px;
-  width: 100%;
-  margin: 0 auto;
-  @media screen and (max-width: 767px) {
-    max-width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding: 48px 30px 59px 30px;
-  }
-
-  @media screen and (min-width: 1360px) {
-    padding: 49px 31px 57px 30px;
-  }
+.team {
+  padding-top: 49px;
+  padding-bottom: 59px;
 }
-
 .team__img {
   width: 100%;
 }
