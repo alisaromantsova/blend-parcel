@@ -12,12 +12,27 @@
         </p>
         <button type="button" class="blog__button">Read our blog</button>
       </div>
-      <img
-        src="./images/desktop.jpg"
-        alt="On the table is an open notebook, a cup of coffee, a tablet, a pen and two books on top of each other"
-        width="680"
-        class="blog__img"
-      />
+      <picture class="blog__img">
+        <source
+          srcset="./images/blog-phone.jpg 1x, ./images/blog-phone@2x.jpg 2x"
+          media="(max-width: 767px)"
+        />
+
+        <source
+          srcset="./images/blog-desktop.jpg 1x, ./images/blog-desktop@2x.jpg 2x"
+          media="(min-width: 1380px)"
+        />
+        <source
+          srcset="./images/blog-tablet.jpg 1x, ./images/blog-tablet@2x.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <img
+          class="blog__img"
+          src="./images/blog-phone.jpg"
+          alt="On the table is an open notebook, a cup of coffee, a tablet, a pen and two books on top of each other"
+          width="680"
+        />
+      </picture>
     </div>
   </div>
 </section>
