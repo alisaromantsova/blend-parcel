@@ -15,10 +15,10 @@
     background-image: url(../images/bg-mobile@2x.jpg);
   }
 
-  @media screen and (min-width: 708px) and (max-width: 1359px) {
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
     padding-top: 407px;
     padding-bottom: 421px;
-    max-width: 708px;
+    max-width: 768px;
     background-image: url(../images/bg-tablet.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -53,7 +53,7 @@
     line-height: 1.27;
     text-align: center;
     color: var(--hero-text-color);
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 768px) {
       font-size: 55px;
       line-height: 1.2;
     }
@@ -88,7 +88,7 @@
     transition: background-color 250ms linear, color 250ms linear;
     outline: none;
     border: none;
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 768px) {
       font-size: 18px;
       line-height: 1.55;
     }

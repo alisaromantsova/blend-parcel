@@ -1,15 +1,45 @@
-  <section class="solution">
-      <div class="container">
-        <img class="solution__img" src="./images/rectangle.jpg" alt="team" width="680" />
-        <div class="solution__content">
-          <p class="solution__pre-title">What you are looking for</p>
-          <h2 class="solution__title">We provide bespoke solutions</h2>
-          <p class="solution__text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
-            quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
-            itaque rerum temporibus doloribus iste maiores deleniti?
-          </p>
-          <button type="button" class="solution__button">Read more</button>
-        </div>
-      </div>
-    </section>
+<section class="solution">
+  <div class="container">
+    <picture class="solution__img">
+      <source
+        srcset="
+          ./images/solution-phone.jpg    1x,
+          ./images/solution-phone@2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+
+      <source
+        srcset="
+          ./images/solution-desktop.jpg    1x,
+          ./images/solution-desktop@2x.jpg 2x
+        "
+        media="(min-width: 1380px)"
+      />
+      <source
+        srcset="
+          ./images/solution-tablet.jpg    1x,
+          ./images/solution-tablet@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        class="solution__img"
+        src="./images/solution-phone.jpg"
+        alt="team"
+        width="680"
+      />
+    </picture>
+    <div class="solution__content">
+      <p class="solution__pre-title">What you are looking for</p>
+      <h2 class="solution__title">We provide bespoke solutions</h2>
+      <p class="solution__text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
+        ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum
+        illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste
+        maiores deleniti?
+      </p>
+      <button type="button" class="solution__button">Read more</button>
+    </div>
+  </div>
+</section>

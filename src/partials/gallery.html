@@ -9,6 +9,37 @@
     <ul class="gallery gallery__list">
       <li>
         <a href="./images/cases1.jpg">
+          <picture class="gallery__img">
+            <source
+              srcset="
+                ./images/callback-phone.jpg    1x,
+                ./images/callback-phone@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+
+            <source
+              srcset="
+                ./images/callback-desktop.jpg    1x,
+                ./images/callback-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1380px)"
+            />
+            <source
+              srcset="
+                ./images/callback-tablet.jpg    1x,
+                ./images/callback-tablet@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              class="gallery__img"
+              src="./images/callback-phone.jpg"
+              alt="Team are working."
+              width="320"
+            />
+          </picture>
+
           <img
             src="./images/rectangle1.jpg"
             alt="Team are working."
