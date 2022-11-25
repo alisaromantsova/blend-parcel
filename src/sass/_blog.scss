@@ -88,6 +88,9 @@
     max-width: 480px;
   }
   @media screen and (min-width: 768px) {
-    width: 50%;
+    width: 384px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 680px;
   }
 }
